@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="stats-container">
+        <div class="details">
+          <h1>To-Do List</h1>
+          <p class="completion-message" style="visibility: none;" >Keep it up!</p>
+
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="stats-number">
+          <p id="numbers">0/0</p>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <input type="text" id="taskInput" placeholder="Enter your task" />
+        <button id="addBtn">+</button>
+        <button id="saveBtn" style="display: none">
+          <img src="images/reload.png" class="reload-img" />
+        </button>
+      </div>
+
+      <p id="error-message" class="error-message"></p>
+
+      <div class="tabs">
+        <button class="tab_btn">All Tasks</button>
+        <button class="tab_btn">Assigned</button>
+        <button class="tab_btn">Completed</button>
+        <div class="line"></div>
+      </div>
+
+      <div class="task-container">
+        <div class="task"></div>
+      </div>
+    </div>
+    <div class="clear-buttons">
+      <button id="clearAllBtn">Clear All</button>
+      <button id="clearCompletedBtn">Clear Completed</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
